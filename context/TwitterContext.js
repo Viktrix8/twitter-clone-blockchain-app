@@ -195,7 +195,7 @@ export const TwitterProvider = ({ children }) => {
       value={{
         appStatus,
         currentAccount,
-        connectWallet: connectToWallet,
+        connectToWallet,
         tweets,
         fetchTweets,
         setAppStatus,
