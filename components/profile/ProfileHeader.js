@@ -35,7 +35,7 @@ const ProfileHeader = () => {
         <div className={style.details}>
           <div className={style.primary}>{currentUser.name}</div>
           <div className={style.secondary}>
-            {currentUser.tweets.length} Tweets
+            {currentUser.tweets?.length} Tweets
           </div>
         </div>
       </div>
