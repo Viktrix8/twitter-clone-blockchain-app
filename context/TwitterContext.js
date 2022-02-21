@@ -48,7 +48,7 @@ export const TwitterProvider = ({ children }) => {
   /**
    * Initiates MetaMask wallet connection
    */
-  const connectWallet = async () => {
+  const connectToWallet = async () => {
     if (!window.ethereum) return setAppStatus('noMetaMask')
     try {
       setAppStatus('loading')
@@ -195,7 +195,7 @@ export const TwitterProvider = ({ children }) => {
       value={{
         appStatus,
         currentAccount,
-        connectWallet,
+        connectWallet: connectToWallet,
         tweets,
         fetchTweets,
         setAppStatus,
